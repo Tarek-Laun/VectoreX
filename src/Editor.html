@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>VectoreX v0.0.1 - none.svg</title>
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body>
+        <main>
+            <div id="MenuBar">
+                <div class="dropdown">
+                    <span href="#">File</span>
+                    <div class="dropdown-Content">
+                        <a href="#">New File</a>
+                        <a href="#">Open File</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <span href="#">Edit</span>
+                    <div class="dropdown-Content">
+                        <a href="#">Clear all</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <span href="#">Window</span>
+                    <div class="dropdown-Content">
+                        <a href="#">Settings</a>
+                    </div>
+                </div>
+            </div>
+            <div id="ToolBar"> 
+                <a href="#" id="Arrow" onclick="SelectTool('Arrow')" class="ToolBar Active"><img src="Icons/next_black_24dp.svg" width="25em"></a>
+                <a href="#" id="Fill" onclick="SelectTool('Fill')" class="ToolBar"><img src="Icons/format_color_fill_black_24dp.svg" width="25em"></a>
+                <a href="#" id="Rect" onclick="SelectTool('Rect')" class="ToolBar"><img src="Icons/rectangle_black_24dp.svg" width="25em"></a>
+                <a href="#" id="Circle" onclick="SelectTool('Circle')" class="ToolBar"><img src="Icons/circle_black_24dp.svg" width="25em"></a>
+                <a href="#" id="Path" onclick="SelectTool('Path')" class="ToolBar"><img src="Icons/show_chart_black_24dp.svg" width="25em"></a>
+            </div>
+            <svg id="Canvis" xmlns="http://www.w3.org/2000/svg">
+                
+            </svg>
+        </main>
+        <div id="Inspectore">
+            <h2>#ElementName</h2>
+            <input type="color" id="ColorPicker">
+
+        </div>
+        <script src="JS/WorkSpace.js"></script>
+        <script src="JS/Tools/Rect.js"></script>
+        <script src="JS/ToolBar.js"></script>
+    </body>
+</html>

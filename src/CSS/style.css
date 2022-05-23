@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+  
+*:focus {
+    outline: 0 !important;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+    font-family: 'Roboto', sans-serif;
+	margin: 0px;
+    background: #dbdbdb;
+}
+
+main {
+    height: 100%;
+    width: 80%;
+    background: #dbdbdb;
+    color: black;
+    float: left;
+}
+
+#Inspectore {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    float: right;
+    width: 20%;
+    padding: 1em;
+    border-radius: 10px;
+    background: #ffffff;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+}
+
+#Inspectore h2 {
+    margin: 0;
+}
+
+#ToolBar {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 2.5em;
+    height: auto;
+    float: left;
+    background: #ffffff;
+    position: absolute;
+    left: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+
+.ToolBar {
+    width: 100%;
+    padding: 0.5em;
+    float: left;
+    height: auto;
+    border-radius: 10px;
+}
+
+.ToolBar:hover {
+    background: #9e9e9e;
+}
+
+.Active {
+    background: #0099ff;
+}
+
+.Active:hover {
+    background: #0099ff;
+}
+
+#MenuBar {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    height: 2.2em;
+    width: auto;
+    float: left;
+    background: #ffffff;
+    position: absolute;
+    left: 10;
+    top: 10;
+    border-radius: 10px;
+}
+
+#MenuBar a {
+    padding: 0.5em;
+    text-decoration: none;
+    color: black;
+    float: left;
+    border-radius: 10px;
+}
+
+#MenuBar a:hover {
+    background: #9e9e9e;
+}
+
+#Canvis {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background: #ffffff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-67.5%);
+    border-radius: 10px;
+    width: 60%;
+    height: 70%;
+}
+
+.dropdown {
+    padding: 0.5em;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown span {
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+}
+
+.dropdown:hover {
+    background: #9e9e9e;
+    border-radius: 10px;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 28px;
+    padding: 0.5em;
+    width: auto;
+    min-width: 6.5em;
+    border-radius: 0px 10px 10px 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}

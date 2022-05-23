@@ -1,0 +1,14 @@
+{
+  "name": "vectorex",
+  "version": "0.0.1",
+  "description": "A simple Vectore Editor.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Tarek Laun",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^16.0.4"
+  }
+}
